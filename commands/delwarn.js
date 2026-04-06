@@ -39,4 +39,4 @@ module.exports = {
     db.saveWarns(allWarns);
     return interaction.reply({ content: `✅ Le warn **${warnId}** a été supprimé.` });
   }
-};
+}; 

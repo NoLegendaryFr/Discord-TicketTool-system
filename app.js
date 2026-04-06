@@ -34,3 +34,4 @@ bot.commands = new Discord.Collection();
   // Connexion du bot
   bot.login(config.token);
 })();
+ 

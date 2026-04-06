@@ -63,3 +63,4 @@ module.exports = async (bot) => {
 		console.error('❌ Erreur lors de l’enregistrement des commandes :', error);
 	}
 };
+ 

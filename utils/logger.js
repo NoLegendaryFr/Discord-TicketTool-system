@@ -26,3 +26,4 @@ module.exports = async (bot, guild, action, moderator, target, reason) => {
 
   channel.send({ embeds: [logEmbed] });
 };
+ 

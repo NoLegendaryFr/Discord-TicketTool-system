@@ -222,3 +222,4 @@ module.exports = async (bot, interaction) => {
     setTimeout(() => interaction.channel.delete().catch(() => {}), 3000);
   }
 };
+ 

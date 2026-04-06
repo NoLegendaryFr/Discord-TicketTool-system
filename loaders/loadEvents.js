@@ -10,3 +10,4 @@ module.exports = async (bot) => {
 			console.log(`Événement ${file} chargé avec succès !`);
 		});
 };
+ 
