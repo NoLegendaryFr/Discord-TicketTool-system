@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "fs": "^0.0.1-security",
+    "ms": "^2.1.3"
+  },
+  "name": "tickettool",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "No_Legendary_Fr",
+  "license": "ISC",
+  "description": "Propriété de No_Legendary_Fr - Licence CC BY-ND 4.0. La mention de l'auteur doit rester intacte.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoLegendaryFr/TicketTool.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NoLegendaryFr/TicketTool/issues"
+  },
+  "homepage": "https://github.com/NoLegendaryFr/TicketTool#readme"
+}
