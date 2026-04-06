@@ -5,6 +5,7 @@ const path = require("path");
  * Lit un fichier JSON de manière sécurisée.
  * Retourne un objet vide {} si le fichier n'existe pas ou est corrompu.
  */
+
 function readData(fileName) {
   const filePath = path.resolve(__dirname, "..", fileName);
 

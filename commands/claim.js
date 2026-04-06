@@ -5,7 +5,7 @@ const {
 } = require("discord.js");
 const fs = require("fs");
 const pathConfig = "./configTickets.json";
-const logger = require("../utils/logger"); // On ajoute l'import du logger
+const logger = require("../utils/logger");
 
 module.exports = {
   name: "claim",
@@ -78,7 +78,6 @@ module.exports = {
 
     await interaction.reply({ embeds: [embed] });
 
-    // --- AJOUT DU LOGGER ICI ---
     await logger(
       bot,
       interaction.guild,

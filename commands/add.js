@@ -44,7 +44,6 @@ module.exports = {
 
     try {
       // 3. Mise à jour des permissions
-      // On utilise member.id pour être 100% sûr que Discord.js accepte le type
       await channel.permissionOverwrites.edit(member.id, {
         ViewChannel: true,
         SendMessages: true,

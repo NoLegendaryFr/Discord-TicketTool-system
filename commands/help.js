@@ -5,8 +5,8 @@ const pathConfig = "./configTickets.json";
 module.exports = {
   name: "help",
   description: "Donne les commandes du bot",
-  permission: Discord.PermissionFlagsBits.SendMessages, // Ouvert pour l'affichage, filtré dans le run
-  dm: false, // Nécessaire pour vérifier les rôles sur le serveur
+  permission: Discord.PermissionFlagsBits.SendMessages,
+  dm: false, 
   category: "Information",
   options: [
     {

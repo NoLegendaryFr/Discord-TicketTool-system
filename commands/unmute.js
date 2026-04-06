@@ -9,7 +9,7 @@ module.exports = {
   category: "Modération",
   options: [
     {
-      type: Discord.ApplicationCommandOptionType.User, // Utilisation de la constante correcte
+      type: Discord.ApplicationCommandOptionType.User,
       name: "membre",
       description: "Le membre à unmute",
       required: true,

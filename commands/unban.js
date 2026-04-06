@@ -9,7 +9,7 @@ module.exports = {
   category: "Modération",
   options: [
     {
-      type: Discord.ApplicationCommandOptionType.User, // Utilisation de la constante correcte
+      type: Discord.ApplicationCommandOptionType.User,
       name: "utilisateur",
       description: "L'utilisateur à débannir",
       required: true,

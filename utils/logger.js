@@ -4,8 +4,7 @@ const db = require("./database");
 module.exports = async (bot, guild, action, moderator, target, reason) => {
   // Lecture de la config via ton nouveau système
   const config = db.readData("configTickets.json");
-  const logChannelId = config.logsChannel; // "logsChannel" avec un 's' comme dans ticketconfig.js
-
+  const logChannelId = config.logsChannel;
   if (!logChannelId) return;
 
   const channel = guild.channels.cache.get(logChannelId);

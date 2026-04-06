@@ -24,7 +24,7 @@ module.exports = {
     const config = db.readData("configTickets.json");
     const selectedRole = interaction.options.getRole("role");
 
-    // Ta vérification de sécurité actuelle
+    // Vérification de sécurité actuelle
     const isStaff =
       config.staffRoles?.some((r) =>
         interaction.member.roles.cache.has(r.id),
@@ -40,7 +40,7 @@ module.exports = {
     await interaction.deferReply();
 
     try {
-      // Ta boucle actuelle pour cacher le ticket aux autres staffs
+      // Boucle actuelle pour cacher le ticket aux autres staffs
       if (config.staffRoles) {
         for (const staff of config.staffRoles) {
           await interaction.channel.permissionOverwrites.edit(staff.id, {

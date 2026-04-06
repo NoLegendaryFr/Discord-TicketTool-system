@@ -23,7 +23,6 @@ bot.commands = new Discord.Collection();
   await loadCommands(bot);
   await loadEvents(bot);
 
-  // Dans app.js, avant bot.login
   process.on("unhandledRejection", (reason, promise) => {
     console.error(" [ANTI-CRASH] Rejet non géré :", reason);
   });

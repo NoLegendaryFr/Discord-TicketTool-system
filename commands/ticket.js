@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-const logger = require("../utils/logger"); // 👈 Import du logger
+const logger = require("../utils/logger");
 const path = "./configTickets.json";
 
 module.exports = {
@@ -67,7 +67,7 @@ module.exports = {
       interaction.guild,
       "Envoi Panneau Ticket",
       interaction.user,
-      bot.user, // La cible ici est le bot lui-même (envoi du message)
+      bot.user,
       `Panneau envoyé dans le salon : ${targetChannel.name}`,
     );
 

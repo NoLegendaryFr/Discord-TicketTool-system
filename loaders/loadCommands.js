@@ -2,7 +2,7 @@ const fs = require("fs");
 const Discord = require("discord.js");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord.js");
-const config = require("../config"); // On garde l'import pour le TOKEN uniquement
+const config = require("../config");
 
 module.exports = async (bot) => {
   // 1. Charger les IDs depuis le fichier JSON de ticket

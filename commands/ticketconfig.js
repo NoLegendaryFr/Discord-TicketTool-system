@@ -209,17 +209,17 @@ module.exports = {
     if (focusedOption.name === "id_unique") {
       const config = db.readData("configTickets.json");
 
-      // On récupère les clés (IDs) de l'objet categories, ou un tableau vide si rien n'existe
+      // Récupère les clés (IDs) de l'objet categories, ou un tableau vide si rien n'existe
       const categories = config.categories
         ? Object.keys(config.categories)
         : [];
 
-      // On filtre les résultats selon ce que l'utilisateur commence à taper
+      // Filtre les résultats selon ce que l'utilisateur commence à taper
       const filtered = categories.filter((choice) =>
         choice.toLowerCase().includes(focusedOption.value.toLowerCase()),
       );
 
-      // On répond à Discord avec les suggestions (max 25)
+      // Répond à Discord avec les suggestions (max 25)
       await interaction.respond(
         filtered
           .slice(0, 25)

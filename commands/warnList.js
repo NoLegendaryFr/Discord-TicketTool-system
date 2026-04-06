@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 const pathWarns = "./warnList.json";
-const pathConfig = "./configTickets.json"; // 👈 On ajoute le chemin de la config
+const pathConfig = "./configTickets.json";
 
 module.exports = {
   name: "warnlist",
@@ -84,7 +84,7 @@ module.exports = {
       .setTimestamp()
       .setFooter({ text: "Système de Modération" });
 
-    // Limiter l'affichage aux 25 derniers (limite Discord)
+    // Limiter l'affichage aux 25 derniers
     const displayWarns = userWarns.slice(0, 25);
 
     displayWarns.forEach((warn, index) => {

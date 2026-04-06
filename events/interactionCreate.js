@@ -108,7 +108,7 @@ module.exports = async (bot, interaction) => {
     interaction.isStringSelectMenu() &&
     interaction.customId === "select_ticket_category"
   ) {
-    const selectedKey = interaction.values[0]; // C'est l'ID unique (ex: moderation)
+    const selectedKey = interaction.values[0];
     const cat = config.categories[selectedKey];
 
     if (!cat)
