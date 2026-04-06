@@ -67,5 +67,5 @@ Il est de votre responsabilité de vérifier régulièrement les mises à jour.
 * Permissions dynamiques : Gestion automatique via le fichier de config.
 
 ---------------------------------------------------------------------------
-Fait avec ❤️ et rigueur par No_Legendary_Fr
+Fait avec ❤️ par No_Legendary_Fr
 ===========================================================================
